@@ -1,0 +1,16 @@
+# One-command local run: docker compose up --build
+# Needs ./processed/ already populated (run data_pipeline.py -> embeddings.py
+# -> compatibility.py locally first -- see README.md).
+#
+# export GROQ_API_KEY=your-key   (or put it in a .env file next to this)
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./processed:/app/processed:ro

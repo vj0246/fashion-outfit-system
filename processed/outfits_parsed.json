@@ -1,0 +1,742 @@
+[
+  {
+    "outfit_id": "outfit W1",
+    "gender": "women",
+    "occasion": "party",
+    "wear_type": "western",
+    "theme": "Black cocktail",
+    "palette": "black / red",
+    "stylist_rationale": "Black midi with a gold chain waist detail; gold crystal slingback pumps echo that hardware, and a soft blush box clutch keeps the eye on the dress.",
+    "items": [
+      {
+        "id": "ajio_703182002",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_42540276",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_15660676",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W2",
+    "gender": "women",
+    "occasion": "party",
+    "wear_type": "western",
+    "theme": "Wine bodycon evening",
+    "palette": "maroon / red / white",
+    "stylist_rationale": "Sleek wine square-neck bodycon; nude-tan kitten sandals lengthen the line and a silver sparkle clutch adds just enough shine.",
+    "items": [
+      {
+        "id": "myntra_41733768",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_31751105",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_701677398",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W3",
+    "gender": "women",
+    "occasion": "party",
+    "wear_type": "western",
+    "theme": "Magenta slip, night out",
+    "palette": "red / white / black",
+    "stylist_rationale": "Magenta ruched slip dress with white pointed ankle-booties for an edgy contrast; a black quilted chain sling grounds the brights.",
+    "items": [
+      {
+        "id": "myntra_34682942",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_32069236",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_24130018",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W4",
+    "gender": "women",
+    "occasion": "festive",
+    "wear_type": "ethnic",
+    "theme": "Dusty-blue Anarkali",
+    "palette": "grey / brown / pink / black",
+    "stylist_rationale": "Dusty blue-grey anarkali with gold embroidery; brown silver-trimmed juttis and a silver stone necklace stay tonal, black clutch finishes it.",
+    "items": [
+      {
+        "id": "ajio_702454568",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "nykaa_24377703",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_700825576",
+        "role": "accessory_1",
+        "slot": "accessory"
+      },
+      {
+        "id": "myntra_39451752",
+        "role": "accessory_2",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W5",
+    "gender": "women",
+    "occasion": "wedding",
+    "wear_type": "ethnic",
+    "theme": "Red Banarasi saree",
+    "palette": "red / cream / white",
+    "stylist_rationale": "Classic red Banarasi silk with gold zari; gold embellished juttis, a gold-kundan red-stone set and a gold pearl potli all pick up the zari \u2014 full traditional bridal-guest look.",
+    "items": [
+      {
+        "id": "ajio_467147176",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "ajio_703351510",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_7451803",
+        "role": "accessory_1",
+        "slot": "accessory"
+      },
+      {
+        "id": "myntra_41578752",
+        "role": "accessory_2",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W6",
+    "gender": "women",
+    "occasion": "festive",
+    "wear_type": "ethnic",
+    "theme": "Purple sharara set",
+    "palette": "purple / red / white",
+    "stylist_rationale": "Deep-purple embellished sharara set; wine block pumps with a gold buckle sit in the same rich family, kept light with simple drop earrings.",
+    "items": [
+      {
+        "id": "ajio_703450523",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_38487469",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_625852",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W7",
+    "gender": "women",
+    "occasion": "office",
+    "wear_type": "western",
+    "theme": "Navy-floral workwear",
+    "palette": "navy / green / white / olive",
+    "stylist_rationale": "Navy floral satin shirt with olive wide-leg trousers and a navy blazer \u2014 muted, grown-up palette; cream bow kitten pumps and an olive tote keep it boardroom-neat.",
+    "items": [
+      {
+        "id": "nykaa_21896203",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_19331662",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "myntra_30441198",
+        "role": "layer",
+        "slot": "layer"
+      },
+      {
+        "id": "myntra_26814366",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_36090580",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W8",
+    "gender": "women",
+    "occasion": "casual",
+    "wear_type": "western",
+    "theme": "Light-denim day",
+    "palette": "white / blue / cream / black / brown",
+    "stylist_rationale": "Cream floral peplum top with light wide-leg jeans and cream sneakers \u2014 easy and bright; black sling (a staple) and sunglasses for daytime.",
+    "items": [
+      {
+        "id": "myntra_39522716",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "myntra_41163758",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_703187803",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_24130018",
+        "role": "accessory_1",
+        "slot": "accessory"
+      },
+      {
+        "id": "nykaa_22909654",
+        "role": "accessory_2",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W9",
+    "gender": "women",
+    "occasion": "vacation",
+    "wear_type": "western",
+    "theme": "Navy-floral maxi",
+    "palette": "navy / brown / olive",
+    "stylist_rationale": "Flowy navy maxi printed with cream lilies; flat brown sandals and an olive tote (staple) make it walkable, sunglasses for the sun.",
+    "items": [
+      {
+        "id": "ajio_701467182",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "ajio_702390240",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_36090580",
+        "role": "accessory_1",
+        "slot": "accessory"
+      },
+      {
+        "id": "nykaa_22909654",
+        "role": "accessory_2",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W10",
+    "gender": "women",
+    "occasion": "party",
+    "wear_type": "western",
+    "theme": "Mocha satin co-ord",
+    "palette": "brown / black",
+    "stylist_rationale": "A matching mocha satin cami + wrap skirt does the coordinating; tonal brown sandals and the black sling keep it sleek for dinner.",
+    "items": [
+      {
+        "id": "ajio_703543037",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "ajio_702390240",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_24130018",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W11",
+    "gender": "women",
+    "occasion": "sports",
+    "wear_type": "western",
+    "theme": "Athleisure",
+    "palette": "tan / black / cream",
+    "stylist_rationale": "Blue tank over black flare leggings with cushioned cream sneakers \u2014 a clean, move-ready set.",
+    "items": [
+      {
+        "id": "nykaa_19356700",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_13632320",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_703187803",
+        "role": "footwear",
+        "slot": "footwear"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W12",
+    "gender": "women",
+    "occasion": "winter",
+    "wear_type": "western",
+    "theme": "Grey-coat layers",
+    "palette": "red / blue / grey / black",
+    "stylist_rationale": "Rust waffle-knit sweater and light jeans under a grey long coat, finished with black chunky boots \u2014 warm, autumnal, well-proportioned.",
+    "items": [
+      {
+        "id": "myntra_11990814",
+        "role": "hero",
+        "slot": "layer"
+      },
+      {
+        "id": "myntra_41163758",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_702780607",
+        "role": "layer",
+        "slot": "layer"
+      },
+      {
+        "id": "myntra_41756001",
+        "role": "footwear",
+        "slot": "footwear"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W13",
+    "gender": "women",
+    "occasion": "casual",
+    "wear_type": "western",
+    "theme": "Maroon shirt + denim skirt",
+    "palette": "maroon / blue / cream / black",
+    "stylist_rationale": "Maroon utility shirt with a light-denim midi skirt and cream sneakers \u2014 relaxed colour-pop casual; black sling staple.",
+    "items": [
+      {
+        "id": "myntra_30308778",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_21742536",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_703187803",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_24130018",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W14",
+    "gender": "women",
+    "occasion": "party",
+    "wear_type": "western",
+    "theme": "Blush statement maxi",
+    "palette": "white / red",
+    "stylist_rationale": "Blush printed slip maxi; nude-tan kitten heels (staple) and the blush box clutch keep everything soft and tonal so the print leads.",
+    "items": [
+      {
+        "id": "nykaa_20942213",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_31751105",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "myntra_15660676",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit W15",
+    "gender": "women",
+    "occasion": "festive",
+    "wear_type": "ethnic",
+    "theme": "Navy kurta suit set",
+    "palette": "navy / brown / pink",
+    "stylist_rationale": "Navy straight kurta suit with its own dupatta and gold neckwork; brown juttis and a silver set (staples) keep it understated and festive.",
+    "items": [
+      {
+        "id": "ajio_702733799",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "nykaa_24377703",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_700825576",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M1",
+    "gender": "men",
+    "occasion": "casual",
+    "wear_type": "western",
+    "theme": "Navy smart-casual",
+    "palette": "navy / green / brown / red",
+    "stylist_rationale": "Navy casual shirt with sage chinos and brown bit-loafers \u2014 a crisp earthy combo; a green-dial leather watch finishes it.",
+    "items": [
+      {
+        "id": "myntra_38692620",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_24178529",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_702013278",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_4935353720",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M2",
+    "gender": "men",
+    "occasion": "vacation",
+    "wear_type": "western",
+    "theme": "Sage linen summer",
+    "palette": "green / navy / olive",
+    "stylist_rationale": "Sage linen shirt with navy cotton shorts and olive double-strap sandals; an olive cap pulls the greens together for vacation.",
+    "items": [
+      {
+        "id": "ajio_703306501",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_25523123",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_700692049",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_702546309",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M3",
+    "gender": "men",
+    "occasion": "wedding",
+    "wear_type": "western",
+    "theme": "Navy tailored suit",
+    "palette": "grey / white / black / red",
+    "stylist_rationale": "Navy two-piece over a white shirt with black derby shoes and a steel watch \u2014 sharp and ceremony-ready (navy + black is foolproof).",
+    "items": [
+      {
+        "id": "ajio_469618352",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_28569210",
+        "role": "second",
+        "slot": "topwear"
+      },
+      {
+        "id": "ajio_700917335",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_4934125790",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M4",
+    "gender": "men",
+    "occasion": "office",
+    "wear_type": "western",
+    "theme": "Crisp office formal",
+    "palette": "white / red / black",
+    "stylist_rationale": "White formal shirt (a staple) with light-grey trousers and black driving loafers; steel watch \u2014 clean desk-to-meeting formal.",
+    "items": [
+      {
+        "id": "myntra_28569210",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "myntra_23237806",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_469683825",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_4934125790",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M5",
+    "gender": "men",
+    "occasion": "sports",
+    "wear_type": "western",
+    "theme": "Athleisure",
+    "palette": "grey / brown / green / olive",
+    "stylist_rationale": "Charcoal sweatshirt with maroon track pants and olive running shoes; cap on top \u2014 comfortable, tonal and sporty.",
+    "items": [
+      {
+        "id": "ajio_443087217",
+        "role": "hero",
+        "slot": "layer"
+      },
+      {
+        "id": "ajio_464835118",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_469763526",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_702546309",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M6",
+    "gender": "men",
+    "occasion": "festive",
+    "wear_type": "ethnic",
+    "theme": "Cream kurta + Nehru",
+    "palette": "black / navy / brown / red",
+    "stylist_rationale": "Cream printed kurta set sharpened with a navy Nehru jacket and brown mojaris \u2014 the navy adds structure to the festive cream.",
+    "items": [
+      {
+        "id": "myntra_40399611",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "myntra_38200553",
+        "role": "layer",
+        "slot": "layer"
+      },
+      {
+        "id": "ajio_464207650",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_4935353720",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M7",
+    "gender": "men",
+    "occasion": "wedding",
+    "wear_type": "ethnic",
+    "theme": "Ivory sherwani",
+    "palette": "beige / brown / red",
+    "stylist_rationale": "Ivory sherwani with a maroon-printed dupatta and brown mojaris (staple) \u2014 classic wedding formality, warm neutral palette.",
+    "items": [
+      {
+        "id": "ajio_466576129",
+        "role": "hero",
+        "slot": "onepiece"
+      },
+      {
+        "id": "ajio_464207650",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_4934125790",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M8",
+    "gender": "men",
+    "occasion": "casual",
+    "wear_type": "western",
+    "theme": "Lavender polo day",
+    "palette": "blue / green / olive",
+    "stylist_rationale": "Dusty-lavender polo with blue jeans and olive running shoes (staple); cap for an easy weekend look \u2014 soft colour against denim.",
+    "items": [
+      {
+        "id": "myntra_29132512",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_21046502",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_469763526",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_702546309",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M9",
+    "gender": "men",
+    "occasion": "casual",
+    "wear_type": "western",
+    "theme": "Denim-jacket street",
+    "palette": "navy / green / brown",
+    "stylist_rationale": "White tee under a black graphic denim jacket with sage chinos (staple) and brown work boots \u2014 relaxed streetwear with grounding browns.",
+    "items": [
+      {
+        "id": "myntra_42184814",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "nykaa_24178529",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "nykaa_22006528",
+        "role": "layer",
+        "slot": "layer"
+      },
+      {
+        "id": "ajio_701984081",
+        "role": "footwear",
+        "slot": "footwear"
+      }
+    ]
+  },
+  {
+    "outfit_id": "outfit M10",
+    "gender": "men",
+    "occasion": "party",
+    "wear_type": "western",
+    "theme": "Black party shirt",
+    "palette": "black / red",
+    "stylist_rationale": "Black textured party shirt with grey trousers and black loafers (staples) plus a steel watch \u2014 sleek monochrome for evening.",
+    "items": [
+      {
+        "id": "myntra_36794231",
+        "role": "hero",
+        "slot": "topwear"
+      },
+      {
+        "id": "myntra_23237806",
+        "role": "second",
+        "slot": "bottomwear"
+      },
+      {
+        "id": "ajio_469683825",
+        "role": "footwear",
+        "slot": "footwear"
+      },
+      {
+        "id": "ajio_4934125790",
+        "role": "accessory_1",
+        "slot": "accessory"
+      }
+    ]
+  }
+]

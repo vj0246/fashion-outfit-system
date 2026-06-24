@@ -1,0 +1,15 @@
+# Runtime-only deps for serving (backend/main.py). FashionCLIP/vanilla-CLIP
+# are NOT here on purpose -- embeddings are precomputed once by
+# embeddings.py and shipped as processed/*.npy; the served container never
+# loads those CV models. sentence-transformers still pulls in torch
+# transitively (needed for MiniLM query encoding) -- that's why this still
+# can't go on Vercel's serverless functions (250MB package limit), but it's
+# light enough for Render/Fly/Hugging Face Spaces' free container tiers.
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+sentence-transformers>=2.7
+groq>=0.30

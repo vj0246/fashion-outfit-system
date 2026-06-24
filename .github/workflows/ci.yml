@@ -1,0 +1,43 @@
+name: CI
+
+# Deliberately lightweight: the test suite (tests/) uses a synthetic
+# fixture catalog and mocks the query encoder, so it only needs
+# pandas/numpy/scikit-learn -- not torch/transformers/sentence-transformers.
+# That's why this finishes in under a minute instead of needing to
+# download FashionCLIP/MiniLM on every push.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install minimal test deps
+        run: pip install pandas numpy scikit-learn -r requirements-dev.txt
+
+      - name: Run unit tests
+        run: pytest tests/ -v
+
+      - name: Verify backend imports cleanly (syntax/import sanity, no server start)
+        run: |
+          pip install fastapi pydantic groq sentence-transformers
+          python -c "import sys; sys.path.insert(0, '.'); import assistant, retrieval, compatibility, data_pipeline; print('all modules import cleanly')"
+          python -c "
+          import sys, importlib.util as u
+          sys.path.insert(0, '.')
+          spec = u.spec_from_file_location('backend.main', 'backend/main.py')
+          mod = u.module_from_spec(spec)
+          spec.loader.exec_module(mod)
+          print('backend/main.py loaded cleanly:', mod.app.title)
+          "

@@ -1,0 +1,129 @@
+======================================================================
+DATASET ANALYSIS REPORT
+======================================================================
+
+Products: 68 | Outfits (ground truth): 25
+
+-- Slot distribution --
+slot
+footwear      17
+onepiece      13
+accessory     13
+topwear       10
+bottomwear     9
+layer          6
+
+-- Category distribution (raw) --
+category
+clutches           4
+heels              4
+ethnic-footwear    4
+formal-shirts      3
+party-dresses      3
+watches            2
+boots              2
+formal-shoes       2
+kurta-sets         2
+handbags           2
+necklaces          2
+jeans              2
+trousers           2
+maxi-dresses       1
+co-ord-sets        1
+flats              1
+long-coats         1
+leggings           1
+salwar-suits       1
+sweaters           1
+earrings           1
+blazers            1
+sunglasses         1
+loafers            1
+sandals            1
+tops               1
+nehru-jackets      1
+denim-jackets      1
+activewear         1
+sweatshirts        1
+track-pants        1
+linen-shirts       1
+sherwanis          1
+wedding-sarees     1
+sharara-sets       1
+running-shoes      1
+sneakers           1
+casual-shirts      1
+party-shirts       1
+tshirts            1
+polo-tshirts       1
+chinos             1
+shorts             1
+casual-dresses     1
+suits              1
+skirts             1
+caps               1
+
+-- Gender split --
+gender
+women    41
+men      27
+
+-- Wear type split --
+wear_type
+western      31
+footwear     17
+accessory    13
+ethnic        7
+
+-- Occasion split --
+occasion
+casual      15
+party       13
+office      12
+festive      9
+wedding      6
+sports       5
+vacation     4
+winter       4
+
+-- Missing values per column --
+rating          25
+rating_count    42
+
+-- Outfit size distribution (items per outfit) --
+items_count
+3     9
+4    14
+5     2
+
+-- Palette distribution (top 10) --
+palette
+black / red                     2
+maroon / red / white            1
+blue / green / olive            1
+beige / brown / red             1
+black / navy / brown / red      1
+grey / brown / green / olive    1
+white / red / black             1
+grey / white / black / red      1
+green / navy / olive            1
+navy / green / brown / red      1
+
+-- Known data-quality issues / challenges --
+- Only 68 unique products / 25 outfits: too small for training any
+  deep model from scratch. Forces a frozen-embedding + rule/graph
+  hybrid approach rather than end-to-end learning.
+- DATA BUG: wear_type should be western/ethnic only, but 30 rows have it overwritten with their own category-type ('footwear'/'accessory') instead of a real style label. wear_type is NOT trustworthy for footwear/accessory rows -- treat as 'unknown' (neutral score) rather than a genuine western/ethnic mismatch downstream.
+- No structured color/baseColour field on products.csv. Color only
+  exists as free text inside `description` (e.g. 'White solid...',
+  'Dark grey sweatshirt...'). Color compatibility extracted via
+  keyword matching against a vocabulary built from outfits.csv's
+  `palette` field (data-driven, not invented color theory).
+- rating missing on 25/68 items, rating_count missing on 42/68 -> not usable as a ranking signal, dropped.
+- Outfits have variable composition (3-5 items): some skip 'second'
+  (one-piece hero), most skip 'accessory_2'. Pipeline must treat slots
+  as optional, not fixed-length.
+- Only 2 genders represented (men/women); no unisex/non-binary
+  category — recommendation logic inherits this binary split.
+- 3 source sites (ajio/myntra/nykaa) -> inconsistent description style
+  per site, handled by relying on embeddings over raw text patterns.

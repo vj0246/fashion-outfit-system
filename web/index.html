@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Stylist — Fashion Outfit Recommender</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/vis-network@9/standalone/umd/vis-network.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>AI Stylist</h1>
+  <span class="tagline">68-item catalog &middot; 25 curated outfits &middot; Groq + FashionCLIP</span>
+</header>
+
+<nav class="tabs">
+  <button data-tab="chat" class="active">Chat</button>
+  <button data-tab="search">Direct Search</button>
+  <button data-tab="atlas">Compatibility Atlas</button>
+</nav>
+
+<main>
+  <div id="error-banner" class="error-banner"></div>
+
+  <section id="panel-chat" class="panel active">
+    <div id="chat-log"></div>
+    <div class="input-row">
+      <input id="chat-input" type="text" placeholder="e.g. I need an outfit for a business meeting">
+      <button id="chat-send">Send</button>
+    </div>
+  </section>
+
+  <section id="panel-search" class="panel">
+    <div class="search-form">
+      <div>
+        <label for="search-gender">Gender</label>
+        <select id="search-gender">
+          <option value="women">Women</option>
+          <option value="men">Men</option>
+        </select>
+      </div>
+      <div>
+        <label for="search-occasion">Occasion</label>
+        <select id="search-occasion">
+          <option value="casual">Casual</option>
+          <option value="party">Party</option>
+          <option value="office">Office</option>
+          <option value="festive">Festive</option>
+          <option value="wedding">Wedding</option>
+          <option value="sports">Sports</option>
+          <option value="vacation">Vacation</option>
+          <option value="winter">Winter</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="search-style">Style description</label>
+        <input id="search-style" type="text" placeholder="smart casual outfit">
+      </div>
+      <div class="full">
+        <label for="search-anchor">Anchor item id (optional)</label>
+        <input id="search-anchor" type="text" placeholder="e.g. ajio_703182002">
+      </div>
+    </div>
+    <button class="primary" id="search-run">Find outfits</button>
+    <div id="search-results" style="margin-top:18px"></div>
+  </section>
+
+  <section id="panel-atlas" class="panel">
+    <p style="color:var(--ink-soft); font-size:13px">
+      The real item-item co-occurrence graph from the 25 curated outfits --
+      every edge is two items that were actually styled together by a
+      human stylist, not an assumption.
+    </p>
+    <div id="graph-wrap"><div id="graph-canvas"></div></div>
+    <div class="legend">
+      <span><span class="dot" style="background:#e0b34d"></span>Onepiece</span>
+      <span><span class="dot" style="background:#e8e1d2"></span>Topwear</span>
+      <span><span class="dot" style="background:#7fa8c9"></span>Bottomwear</span>
+      <span><span class="dot" style="background:#c98a4a"></span>Footwear</span>
+      <span><span class="dot" style="background:#8fae7a"></span>Layer</span>
+      <span><span class="dot" style="background:#d4708a"></span>Accessory</span>
+    </div>
+  </section>
+</main>
+
+<footer>AI Fashion Outfit Recommendation System &mdash; DarexAI assignment MVP</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* web/style.css
+   Palette derived from the dataset itself -- these are the actual 15
+   color tokens mined from outfits.csv's `palette` field by
+   compatibility.py, not a generic theme. Cream ground + maroon/navy
+   accents, the two colors that show up most often pairing together in
+   the real curated outfits.
+*/
+:root {
+  --bg: #f6f1e7;
+  --panel: #fffdf8;
+  --ink: #231f1a;
+  --ink-soft: #6b6356;
+  --maroon: #7a2331;
+  --maroon-deep: #591723;
+  --navy: #1f2d3d;
+  --tan: #c9a876;
+  --olive: #5b6b4d;
+  --line: #e3d9c4;
+  --radius: 2px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.masthead {
+  border-bottom: 2px solid var(--ink);
+  padding: 28px 32px 18px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.masthead h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  color: var(--maroon-deep);
+}
+
+.masthead .tagline {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+nav.tabs {
+  display: flex;
+  gap: 2px;
+  padding: 0 32px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+nav.tabs button {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  padding: 14px 18px 12px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+nav.tabs button.active {
+  color: var(--maroon-deep);
+  border-bottom-color: var(--maroon);
+}
+
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 32px 80px;
+}
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+.error-banner {
+  background: #fdecec;
+  border: 1px solid #d98c8c;
+  color: #7a2331;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  font-size: 13px;
+  display: none;
+}
+
+/* --- chat --- */
+#chat-log { display: flex; flex-direction: column; gap: 14px; margin-bottom: 16px; }
+.msg { max-width: 80%; padding: 10px 14px; border-radius: var(--radius); }
+.msg.user { align-self: flex-end; background: var(--navy); color: #fff; }
+.msg.assistant { align-self: flex-start; background: var(--panel); border: 1px solid var(--line); }
+
+.input-row { display: flex; gap: 8px; }
+.input-row input {
+  flex: 1; padding: 10px 12px; border: 1px solid var(--line);
+  border-radius: var(--radius); font-family: inherit; font-size: 14px;
+}
+button.primary, .input-row button {
+  background: var(--maroon); color: #fff; border: none;
+  padding: 10px 18px; border-radius: var(--radius); cursor: pointer;
+  font-family: "Fraunces", serif; font-size: 14px;
+}
+button.primary:hover, .input-row button:hover { background: var(--maroon-deep); }
+
+/* --- direct search form --- */
+.search-form {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;
+}
+.search-form label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); display: block; margin-bottom: 4px; }
+.search-form select, .search-form input {
+  width: 100%; padding: 9px 10px; border: 1px solid var(--line);
+  border-radius: var(--radius); font-family: inherit; font-size: 14px; background: var(--panel);
+}
+.search-form .full { grid-column: 1 / -1; }
+
+/* --- outfit cards --- */
+.outfit-card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 16px; margin-bottom: 16px;
+}
+.outfit-card .meta { font-size: 12px; color: var(--ink-soft); margin-bottom: 10px; }
+.outfit-items { display: flex; gap: 12px; overflow-x: auto; margin-bottom: 12px; }
+.outfit-item { width: 110px; flex-shrink: 0; text-align: center; }
+.outfit-item img { width: 100%; height: 110px; object-fit: cover; border: 1px solid var(--line); }
+.outfit-item .name { font-size: 11.5px; margin-top: 4px; }
+.outfit-item .price { font-size: 11px; color: var(--ink-soft); }
+
+.breakdown { display: flex; flex-direction: column; gap: 5px; margin: 10px 0; }
+.breakdown .row { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.breakdown .label { width: 110px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+.breakdown .bar-track { flex: 1; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.breakdown .bar-fill { height: 100%; background: var(--maroon); }
+.breakdown .val { width: 36px; text-align: right; color: var(--ink-soft); }
+
+.style-ref { font-style: italic; font-size: 13px; color: var(--ink-soft); border-left: 2px solid var(--tan); padding-left: 10px; }
+
+/* --- compatibility atlas (graph) --- */
+#graph-wrap {
+  background: var(--navy); border-radius: var(--radius); height: 520px;
+  position: relative; overflow: hidden;
+}
+#graph-canvas { width: 100%; height: 100%; }
+.legend {
+  display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; font-size: 12px; color: var(--ink-soft);
+}
+.legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; }
+
+footer {
+  text-align: center; font-size: 11px; color: var(--ink-soft);
+  padding: 24px 0; border-top: 1px solid var(--line); margin-top: 20px;
+}
